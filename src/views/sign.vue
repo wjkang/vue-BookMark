@@ -34,7 +34,7 @@ export default {
 <style>
     .bg{
         background-image: url(../assets/image/bg03.jpg);
-    height: auto;
+    height: 100%;
     /*transform: scale(1);*/
     transform-origin: center top 0px;
     }
@@ -43,7 +43,6 @@ export default {
         height: auto;
         background-size: 100% 100%;
         margin: auto;
-        margin-top: 10%;
         background-image: url(../assets/image/huabian.png);
         background-repeat: no-repeat;
         /*background-position: 5% 5%;*/

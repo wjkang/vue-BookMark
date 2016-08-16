@@ -7,7 +7,7 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    publicPath: '',//css中图片地址：publicPath+ loader url name地址部分
     filename: 'build.js'
   },
   resolveLoader: {
@@ -37,8 +37,8 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'url',
         query: {
-          limit: 10000,
-          name: 'image/[name].[ext]?[hash]'
+          limit: 1,
+          name: 'static/image/[name].[ext]?[hash]'
         }
       }
     ]

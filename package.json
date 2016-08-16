@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --quiet",
     "d": "webpack -d",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",

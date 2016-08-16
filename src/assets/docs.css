@@ -39,9 +39,14 @@
  *
  * Update the basics of our documents to prep for docs content.
  */
-
+html{
+  height:100%;
+}
 body {
   position: relative; /* For scrollspy */
+  height:100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Keep code small in tables on account of limited space */
