@@ -3,7 +3,7 @@ var webpack = require('webpack')
 var ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 module.exports = {
-  plugins: [new ExtractTextPlugin("styles.css")],
+  plugins: [new ExtractTextPlugin("static/style/styles.css")],
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),

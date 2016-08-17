@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import App from './components/App.vue'
-import Sign from './views/sign.vue'
-require('./assets/docs.css');
+import login from './views/login.vue'
+import signup from './views/signup.vue'
+require('./assets/style/docs.css');
 new Vue({
   el: 'body',
-  components: { Sign }
+  components: { signup }
 })
