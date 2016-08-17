@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>vue-demo</title>
-    <link rel="stylesheet" href="dist/static/style/styles.css"></link>
-  </head>
-  <body>
-    <signup></signup>
-    <script src="dist/build.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>vue-demo</title>
+  <link rel="stylesheet" href="dist/static/style/styles.css"></link>
+  <style type="text/css">
+    .back-transition {
+      transition: transform .5s ease;
+    }
+    
+    .back-enter {
+      transform: translate(100%, 0);
+    }
+    
+    .back-leave {
+      transform: translate(-100%, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div id="view">
+      <router-view transition="back" keep-alive></router-view>
+    </div>
+  </div>
+
+  <script src="dist/build.js"></script>
+</body>
+
 </html>

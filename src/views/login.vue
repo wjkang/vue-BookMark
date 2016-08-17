@@ -1,31 +1,33 @@
 <template>
-    <div id="login_bg" class="login_bg"></div>
-    <div class="login_header">
-        <span></span>
-    </div>
-
-    <div class="container">
-        <div class="form_header">
-            <h1 id="logo">BookMark</h1>
+    <div>
+        <div id="login_bg" class="login_bg"></div>
+        <div class="login_header">
+            <span></span>
         </div>
-        <div class="signup_forms" class="signup_forms">
-            <div id="signup_forms_container" class="signup_forms_container">
-                <div class="signup_account" id="signup_account">
-                    <div class="form_user">
-                        <input type="text" name="email" placeholder="Email" id="signup_email">
-                    </div>
-                    <div class="form_password">
-                        <input type="password" name="password" placeholder="Password" id="signup_password">
+
+        <div class="container">
+            <div class="form_header">
+                <h1 id="logo">BookMark</h1>
+            </div>
+            <div class="signup_forms" class="signup_forms">
+                <div id="signup_forms_container" class="signup_forms_container">
+                    <div class="signup_account" id="signup_account">
+                        <div class="form_user">
+                            <input type="text" name="email" placeholder="Email" id="signup_email">
+                        </div>
+                        <div class="form_password">
+                            <input type="password" name="password" placeholder="Password" id="signup_password">
+                        </div>
                     </div>
                 </div>
+                <button type="button" id="signup_forms_submit"><span><strong>Log in</strong></span></button>
             </div>
-            <button type="button" id="signup_forms_submit"><span><strong>Log in</strong></span></button>
         </div>
-    </div>
-    </div>
-    <div class="footer">
-        <div class="footer_signup_link">
-            <a class="signup_link" href="register.html">Sign up</a>
+
+        <div class="footer">
+            <div class="footer_signup_link">
+                <a class="signup_link" v-link="{path:'/signup'}">Sign up</a>
+            </div>
         </div>
     </div>
 </template>
